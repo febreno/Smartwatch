@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="horas">00:00</div>
+
+    <script type="text/javascript">
+            function relogio(){
+                  let elementoID = document.getElementById('horas');
+                  let horalocal = new Date().toLocaleTimeString('pt-br');
+                  elementoID.innerHTML = horalocal;
+              };  
+
+               setInterval(relogio, 1000);
+
+            //    document.getElementByID().addEnventListener("click", funcaoaqui);
+
+            //     <button onclick="minha função" > ver horas </button>
+    
+	</script>
+</body>
+</html>
